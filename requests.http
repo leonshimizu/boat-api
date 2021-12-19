@@ -1,0 +1,16 @@
+### CREATE ACTION
+POST http://localhost:3000/boats
+Content-Type: application/json
+
+{
+  "name": "Test2",
+  "length": 2, 
+  "color": "black and white",
+  "type": "Small"
+}
+
+###  INDEX ACTION - PUSH TO CSV ACTION
+GET http://localhost:3000/boats.json
+
+### DOWNLOAD ACTION
+GET http://localhost:3000/boats.json
